@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Marlon Portfólio</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contatos" class="menu-link">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+
+        <img src="/imagens/marlon.png" alt="Foto Marlon" class="foto-perfil">
+        <h1>Marlon Pereira de Queiroz</h1>
+        <p class="cabecalho-subtitle"><i>Desenvolvedor Front End</i></p>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Olá, Sou desenvolvedor-front end/mobile, amo desenvolver softwares, gosto da
+                interação entre o usuário e a máquina, Combino código limpo com design moderno e otimizado. Sou
+                praticante de Jiu-Jitsu, Muay Thai e amo praticar essas modalidades de combate.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <a href="../tela_jogos/jogo.html" class="projetos-imagem"><img src= "/imagens/super-mario-2d.avif"  alt="game-bros" class="projetos-imagem"></a>
+                <div class="caixa-textos-projeto">
+                   <a href="../tela_jogos/jogo.html" class="info-projetos"><h3 class="info-projetos">Jogos</a></h3>
+                    <p class="paragrafo-projetos">Jogos Simples</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="/imagens/login.jpg" alt="paginaLogin" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Página de Login</h3>
+                    <p class="paragrafo-projetos">Página de Login</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="/imagens/imagem-11.jpg" alt="loja-utensilios" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Loja de Utensilios</h3>
+                    <p class="paragrafo-projetos">Loja de Utensilios</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulos">Entre em Contato</h2>
+        <form class="Formulario" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" id="mensagem" rows="6"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">
+                Falar comigo no WhatsApp
+            </button>
+        </form>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
